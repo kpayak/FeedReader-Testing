@@ -61,9 +61,10 @@ $(function () {
          */
         it('is hidden by default', function () {
             //Check when DOM is loaded that body contains class 'menu-hidden'
-            $(function () {
-                expect($('body').hasClass('menu-hidden')).toBe(true);
-            });
+            //            $(function () {
+            //                expect($('body').hasClass('menu-hidden')).toBe(true);
+            //            });
+            expect($('body').hasClass('menu-hidden')).toBe(true);
         });
 
         /* TODO: Write a test that ensures the menu changes
@@ -94,11 +95,11 @@ $(function () {
          */
 
         beforeEach(function (done) {
-            loadFeed(i, done);
+            loadFeed(1, done);
         });
 
         it('length', function () {
-            //        expect($('.feed').children().length).toBeGreaterThan(0);
+            //            expect($('.feed').children().length).toBeGreaterThan(0);
             expect($('.feed .entry').length).toBeGreaterThan(0);
             //            done();
         });
