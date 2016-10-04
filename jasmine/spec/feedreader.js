@@ -131,13 +131,11 @@ $(function () {
     });
 
     it('content changes',function(done){
-      loadFeed(2,function(){
+      loadFeed(1,function(){
         var currentFeed = $('.feed').children().find('h2')[0].innerHTML;
         expect(currentFeed).not.toEqual(oldFeed);
         done();
       });
-
-
     });
   });
 
